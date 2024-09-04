@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-console": "error",
+    "no-unused-vars": "warn",
+    "camelcase": "error",
+    "no-duplicate-imports": "error"
+  }
 }

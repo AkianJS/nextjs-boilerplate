@@ -3,27 +3,21 @@
 @tailwind utilities;
 
 :root {
+  /* Define variables to use in light theme */
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-main: #f5f5f5;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Define the same variables as in root but for dark theme */
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-main: #333;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
