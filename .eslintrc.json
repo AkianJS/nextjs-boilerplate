@@ -1,9 +1,15 @@
 {
-  "extends": "next/core-web-vitals",
-  "rules": {
-    "no-console": "error",
-    "no-unused-vars": "warn",
-    "camelcase": "error",
-    "no-duplicate-imports": "error"
-  }
+   "extends": "next/core-web-vitals",
+   "plugins": ["@typescript-eslint"],
+   "rules": {
+      "no-console": "error",
+      "@typescript-eslint/no-unused-vars": [
+         "error",
+         {
+            "argsIgnorePattern": "^_"
+         }
+      ],
+      "camelcase": "error",
+      "no-duplicate-imports": "error"
+   }
 }
